@@ -147,24 +147,24 @@ body {
     color: var(--primary);
     padding: 1%;
     border-radius: 5px;
-    width: 50%;
+    width: 30%;
     justify-self: center;
 }
 
 
-.slide-in{
-    animation-name: slide-in;
+.header-slide{
+    animation-name: header-slide;
     animation-duration: 1.5s;
     animation-delay: 0.5s;
     animation-timing-function: linear;
 }
 
-@keyframes slide-in{
+@keyframes header-slide{
     0% {
         transform: translateX(-100%);
     }
     40% {
-        transform: translateX(50%);
+        transform: translateX(100%);
     }
     100% {
         transform: translateX(0); 
@@ -367,6 +367,24 @@ body {
 
 @media (max-width: 768px){
 
+}
+
+@media (max-width: 992px){
+    .intro {
+        width: 65%;
+    }
+
+    @keyframes header-slide{
+        0% {
+            transform: translateX(-100%);
+        }
+        40% {
+            transform: translateX(50%);
+        }
+        100% {
+            transform: translateX(0); 
+        }
+    }
 }
 
 @media (max-width: 1200px){
