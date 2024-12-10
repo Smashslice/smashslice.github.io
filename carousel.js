@@ -5,9 +5,13 @@ let hilton = document.getElementById('hilton');
 let extrusion = document.getElementById('extrusion');
 let tower = document.getElementById('tower');
 
+// Initialize sliders
+createSlider('leftbtn1', 'rightbtn1', ['hilton', 'extrusion', 'tower']);
+createSlider('leftbtn2', 'rightbtn2', ['semester1', 'semester2', 'semester3', 'semester4']);
+createSlider('leftbtn3', 'rightbtn3', ['gaming', 'reading', 'projects']);
+
 // Variables for our animation handling
 let appState = { state: 0 }; // This is our global state, which is passed into our array
-let slides1 = [hilton, extrusion, tower]; // Array that has all our current slides in it
 let isAnimating = false; // Bool for stopping animations from overlapping
 
 // Define a function to initialize a slider
@@ -15,6 +19,12 @@ function createSlider(leftBtnId, rightBtnId, slideIds) {
     const leftBtn = document.getElementById(leftBtnId);
     const rightBtn = document.getElementById(rightBtnId);
     const slides = slideIds.map(id => document.getElementById(id));
+
+    if (!leftBtn || !rightBtn) {
+        console.warn(`Slider not initialized. Missing buttons: leftBtn=${leftBtnId}, rightBtn=${rightBtnId}`);
+        return;
+    }
+
     let state = 0; // Initial state
     let isAnimating = false;
 
@@ -83,6 +93,3 @@ function waitForAnimationEnd(element) {
     });
 }
 
-// Initialize sliders
-createSlider('leftbtn1', 'rightbtn1', ['hilton', 'extrusion', 'tower']);
-createSlider('leftbtn2', 'rightbtn2', ['semester1', 'semester2', 'semester3', 'semester4']);

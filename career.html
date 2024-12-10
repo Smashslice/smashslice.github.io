@@ -5,7 +5,7 @@
     <!-- Finals Project, Dec 12th, 2024, Author Paul Bute -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T</title>
+    <title>Introducing Paul</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/17fc0b51b5.js" crossorigin="anonymous"></script>
 </head>
@@ -20,7 +20,7 @@
     <!-- Start of content -->
 <div class="container align-center">
     <header class="text-center intro mt-3 mb-3 header-slide">
-        <h1>Hey! I'm Paul, an aspiring developer. <br>Here you'll find what I've done and plan to do!</h1>
+        <h1>Hey! I'm Paul, an aspiring developer. <br>Here you'll find what I've done!</h1>
     </header>
 </div>
 <div class="container">
@@ -28,9 +28,9 @@
             <button class="button" id="leftbtn1"><i class="fa-solid fa-caret-left"></i></button>
             <div class="item-box career-box mt-3 mb-3 p-3">
                 <h2 class="item-box-header mb-3 text-center">Work I've done</h2>
-                <p class="slide-text" id="hilton">During highschool, I worked full-time as a housekeeper at the Hilton. It wasn't glamorous, but it taught me a lot about life. From talking to peers to clients. Dealing with difficult, unpleasant and unfair situations. Like most of my work experience, I wouldn't trade it for anything.</p>
-                <p class="d-none slide-text" id="extrusion">After the Hilton, I worked for a local extrusion factory. I started as a line worker, which was a role I filled off and on during the almost two years I worked there. I was quickly introduced to shipping and handling, and after a few months was the shipping and handling manager. After a year, I was the equivalent of the plant manager, dealing with production schedules, managing outgoing shipments and dealing with daily issues.</p>
-                <p class="d-none slide-text" id="tower">After that job, I worked in the cell tower industry for a year, specifically I did structural modification with a small team. The work was demanding, but fulfilling. I learned more in the year I spent on towers than I did anywhere else.</p>
+                <p id="hilton">During highschool, I worked full-time as a housekeeper at the Hilton. It wasn't glamorous, but it taught me a lot about life. From talking to peers to clients. Dealing with difficult, unpleasant and unfair situations. Like most of my work experience, I wouldn't trade it for anything.</p>
+                <p class="d-none" id="extrusion">After the Hilton, I worked for a local extrusion factory. I started as a line worker, which was a role I filled off and on during the almost two years I worked there. I was quickly introduced to shipping and handling, and after a few months was the shipping and handling manager. After a year, I was the equivalent of the plant manager, dealing with production schedules, managing outgoing shipments and dealing with daily issues.</p>
+                <p class="d-none" id="tower">After that job, I worked in the cell tower industry for a year, specifically I did structural modification with a small team. The work was demanding, but fulfilling. I learned more in the year I spent on towers than I did anywhere else.</p>
             </div>
             <button class="button" id="rightbtn1"><i class="fa-solid fa-caret-right"></i></button>
     </div>
@@ -140,6 +140,43 @@
             </div>
         </div>
         <button class="button" id="rightbtn2"><i class="fa-solid fa-caret-right"></i></button>
+    </div>
+    <div class="container align-center">
+        <div class="item-box contact-box justify-center mb-3 no-hover">
+            <h3 class="text-center header-text">Contact Me</h3>
+            <form id="contactForm" class="form-container">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" class="form-input" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" class="form-input" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="reason">Reason for Contact</label>
+                    <textarea id="reason" name="reason" class="form-input" rows="4" required></textarea>
+                </div>
+    
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="notSolicitor" name="notSolicitor" required>
+                        I am not a solicitor
+                    </label>
+                </div>
+    
+                <div class="form-group text-center">
+                    <button type="submit" class="submit">Submit</button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 <!-- Footer -->
