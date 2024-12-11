@@ -378,6 +378,9 @@ body {
         width: 75%;
     }
 
+    .item-box {
+        width: 80%;
+    }
 }
 
 @media (max-width: 768px){
